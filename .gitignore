@@ -1,5 +1,7 @@
 *.iml
 .idea
+./public
+yarn.lock
 # Ignore Mac system files
 .DS_store
 

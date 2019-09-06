@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production';
 module.exports = {
     // Tells Webpack which built-in optimizations to use
@@ -9,7 +10,7 @@ module.exports = {
     // Webpack needs to know where to start the bundling process,
     // so we define the main JS and Sass files, both under
     // the './src' directory
-    entry: ['./src/scripts', './src/styles'],
+    entry: ['./src/scripts/main.js', './src/styles/main.css'],
     // This is where we define the path where Webpack will place
     // the bundled JS file
     output: {
@@ -99,6 +100,11 @@ module.exports = {
         // the location
         new MiniCssExtractPlugin({
             filename: 'assets/styles/main.css'
-        })
+        }),
+        new CopyWebpackPlugin([{
+            from: './src/*.html',
+            to: './',
+            flatten: true,
+        }])
     ]
 };

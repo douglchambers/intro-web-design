@@ -7,3 +7,11 @@ Code is going to be exactly what we've gone over in class, with some extra stuff
 
 using: [https://blog.bitsrc.io/build-a-website-with-modern-tooling-and-no-frameworks-a33e65099f9](https://blog.bitsrc.io/build-a-website-with-modern-tooling-and-no-frameworks-a33e65099f9) as a model for the tooling
 
+
+## Setup: ##
+
+clone repo
+
+install dependencies: `yarn install`
+
+run dev server: `yarn dev`

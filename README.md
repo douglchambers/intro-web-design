@@ -15,3 +15,6 @@ clone repo
 install dependencies: `yarn install`
 
 run dev server: `yarn dev`
+
+## Class Slides: ##
+Class 1: [https://docs.google.com/presentation/d/13wNsm6GaIKuWYpRjfX_P8i-B_bKzFITuZj-hpVvAojM/edit?usp=sharing](public link)

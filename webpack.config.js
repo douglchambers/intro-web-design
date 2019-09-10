@@ -105,6 +105,11 @@ module.exports = {
             from: './src/*.html',
             to: './',
             flatten: true,
+        }]),
+        new CopyWebpackPlugin([{
+            from: './src/images/*',
+            to: './images',
+            flatten: true,
         }])
     ]
 };

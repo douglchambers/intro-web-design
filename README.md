@@ -18,3 +18,5 @@ run dev server: `yarn dev`
 
 ## Class Slides: ##
 Class 1: https://docs.google.com/presentation/d/13wNsm6GaIKuWYpRjfX_P8i-B_bKzFITuZj-hpVvAojM/edit?usp=sharing
+
+Class 2: https://docs.google.com/presentation/d/1HEs9YR5oxV5Hua8po1shGPz03Jsqg5Tyfd46voXtSjI/edit?usp=sharing

@@ -67,6 +67,37 @@ module.exports = {
                 ]
             },
             {
+                // Look for Sass files and process them according to the
+                // rules specified in the different loaders
+                test: /\.css$/,
+                // Use the following loaders from right-to-left, so it will
+                // use sass-loader first and ending with MiniCssExtractPlugin
+                use: [
+                    {
+                        // Extracts the CSS into a separate file and uses the
+                        // defined configurations in the 'plugins' section
+                        loader: MiniCssExtractPlugin.loader
+                    },
+                    {
+                        // Interprets CSS
+                        loader: 'css-loader',
+                        options: {
+                            importLoaders: 2
+                        }
+                    },
+                    {
+                        // Use PostCSS to minify and autoprefix. This loader
+                        // uses the configuration in `postcss.config.js`
+                        loader: 'postcss-loader'
+                    },
+                    {
+                        // Adds support for Sass files, if using Less, then
+                        // use the less-loader
+                        loader: 'sass-loader'
+                    }
+                ]
+            },
+            {
                 // Adds support to load images in your CSS rules. It looks
                 // for .png, .jpg, .jpeg and .gif
                 test: /\.(png|jpe?g|gif)$/,
@@ -99,7 +130,7 @@ module.exports = {
         // indicating what the CSS outputted file name should be and
         // the location
         new MiniCssExtractPlugin({
-            filename: 'assets/styles/main.css'
+            filename: 'styles/main.css'
         }),
         new CopyWebpackPlugin([{
             from: './src/*.html',

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Take a look at:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/position
+    -->
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            color: #FFFFFF;
+        }
+        p {
+            color: #000000;
+        }
+        div {
+            border: 1px solid #000000;
+        }
+        .first-parent {
+            width: 300px;
+            height: 300px;
+            background-color: #FF0000;
+         }
+        .first-child {
+            width: 150px;
+            height: 150px;
+            background-color: #00FF00;
+        }
+        .first-grandchild {
+            width: 75px;
+            height: 75px;
+            background-color: #0000FF;
+        }
+        .second-parent {
+            width: 300px;
+            height: 300px;
+            background-color: #FF0000;
+            position: relative;
+        }
+        .second-child {
+            width: 150px;
+            height: 150px;
+            background-color: #00FF00;
+            position: relative;
+            top: 25px;
+            left: 25px;
+        }
+        .second-grandchild {
+            width: 75px;
+            height: 75px;
+            background-color: #0000FF;
+            position: absolute;
+            top: 25px;
+            left: 25%;
+            color: #FFFFFF;
+        }
+        .sticky-parent {
+            width: 100px;
+            height: 100px;
+            background-color: #30F0FF;
+            position: fixed;
+            top: 550px;
+        }
+        .fixed-parent {
+            width: 100px;
+            height: 100px;
+            background-color: #F030FF;
+            position: fixed;
+            top: 25px;
+            left: 25%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="first-parent">
+        Parent
+        <div class="first-child" style="right: 20px">
+            child
+            <div class="first-grandchild">
+                grandchild
+            </div>
+            <div class="first-grandchild">
+                grandchild
+            </div>
+            More content (overflowing)
+        </div>
+    </div>
+    <hr>
+    <div class="second-parent">
+        Parent
+        <div class="second-child">
+            child
+            <div class="second-grandchild" style="background-color: rgba(0, 125, 125, 0.5);">
+                grandchild (1)
+            </div>
+            <div class="fixed-parent">
+                Fixed!
+            </div>
+            <!-- <div class="second-grandchild">
+                grandchild (2)
+            </div> -->
+            More content
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempus sagittis libero quis volutpat. Vivamus a leo non mi sagittis vestibulum ultrices at nulla. Integer vitae tortor vitae ex fermentum commodo sed eget lacus. Ut ultricies, nunc ac scelerisque ornare, tortor nulla faucibus lacus, id gravida magna nisl eget magna. Quisque vehicula ac lectus ut dictum. Duis vitae euismod ligula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus et velit sollicitudin, aliquam leo nec, blandit nisi. Maecenas elementum dui enim, id suscipit eros luctus at. Cras ullamcorper molestie ante, in scelerisque ante fermentum sed. Sed quis laoreet nunc. Nam luctus magna quam, gravida pulvinar risus pellentesque eget. Etiam quis egestas felis, at placerat magna. Suspendisse potenti.</p>
+
+    <p>Vestibulum laoreet feugiat sapien, a consectetur velit hendrerit quis. Duis luctus eleifend sem, et consectetur nisl blandit nec. Sed semper scelerisque mi, quis semper nisi viverra a. Praesent commodo aliquet tellus ac scelerisque. Ut malesuada mattis venenatis. Donec ut vestibulum tellus, tristique volutpat lorem. Ut justo tortor, tincidunt ut finibus at, consequat vitae diam. Donec tellus ex, porttitor quis mattis at, lobortis quis magna. Ut lacinia lacinia justo quis posuere. Nunc ut lectus nec dolor pellentesque eleifend vel eget arcu. In ut lacus interdum eros pharetra malesuada. Etiam posuere scelerisque justo, nec bibendum lectus posuere luctus.</p>
+
+    <p>Etiam commodo vehicula enim et tristique. Aenean varius massa vitae nulla finibus vulputate. Quisque ullamcorper enim mi, euismod facilisis odio ultricies in. Praesent et dui sit amet elit euismod malesuada eget eu erat. Etiam sollicitudin vel libero at lobortis. Nunc sit amet mi ullamcorper enim finibus dictum vel at nulla. Nunc suscipit feugiat massa. Cras egestas, sapien nec finibus vestibulum, lectus metus rutrum dui, nec vestibulum augue mauris id velit. Nam ullamcorper arcu id erat dictum, ullamcorper condimentum enim finibus. Nunc eget dignissim felis, vitae mollis nulla. Integer risus massa, posuere in justo sit amet, lacinia mattis diam. Donec in orci efficitur, faucibus libero ut, hendrerit nisi. Duis quis tellus porttitor, luctus sapien et, porttitor lorem.</p>
+
+    <p>Duis rhoncus vestibulum augue, ac posuere nulla eleifend non. Sed vitae sapien et justo viverra feugiat accumsan a nulla. Vivamus tincidunt ornare ipsum vel laoreet. In ut blandit lorem. Mauris vel mi nisi. Mauris gravida massa lectus, vel varius sapien viverra quis. Quisque sed aliquet libero. Maecenas dictum sodales libero, porta tempor augue dictum vitae. Ut aliquet dolor in venenatis faucibus. Etiam sit amet justo porttitor, tristique risus id, ornare ipsum. Sed nec bibendum nibh. Sed egestas sem dolor. Cras elit dolor, vehicula vel dictum vitae, vehicula non tellus. In ornare, lacus sit amet bibendum vulputate, ex massa aliquam nibh, ac ornare augue velit nec est. Duis quis cursus dolor, sed pretium nibh. Nulla vitae augue eget lectus lacinia pharetra nec in felis.</p>
+
+    <p>Mauris rhoncus in ipsum vitae mollis. Etiam semper lorem odio, sit amet consectetur elit aliquet nec. Aenean porta augue sit amet tellus bibendum volutpat. Nulla placerat accumsan mi sit amet pellentesque. Fusce eget enim eget libero molestie eleifend eu id mauris. Pellentesque id ipsum dapibus, volutpat purus a, convallis sem. Duis pellentesque nisl sem, et hendrerit elit dictum congue. Etiam lobortis tempor lorem et tempor.</p>
+    <div class="sticky-parent">
+        Sticky!
+    </div>
+
+</body>
+</html>

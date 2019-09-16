@@ -1,3 +1,66 @@
 /*
 placeholder
 */
+body {
+	font-family: sans-serif;
+	background-color: #EEEEEE;
+}
+
+.product-description {
+	font-weight: 700;
+    vertical-align: top;
+}
+
+.who-we-are-container {
+	background-color: #FF0000;
+}
+.who-we-are {
+	display: inline-block;
+	border: 1px solid #000000;
+	margin: 10px;
+	padding: 15px;
+	background-color: #00FF00;
+}
+
+.header-text {
+	position: absolute;
+	text-align: center;
+	right: 10px;
+	background-color: rgba(255, 255, 255, 0.75);
+	width: 50%;
+	padding: 10px;
+    border: 1px solid #000000;
+}
+
+
+.services-table {
+    width: 100%;
+    border: 1px solid #000000;
+}
+
+.company-description {
+    padding: 10px;
+}
+
+.column-2 {
+    width: 49%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.column-3 {
+    width: 33%;
+}
+
+
+
+.pricing {
+    text-align: center;
+}
+
+/*.navbar ul {*/
+    /*list-style: none;*/
+/*}*/
+/*.navbar ul > li {*/
+    /*display: inline-block;*/
+/*}*/

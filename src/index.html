@@ -3,72 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <title>Waggerz Groom Room</title>
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-	<h1>Waggerz Groom Room: Home to the amazing 7 step deshed</h1>
-	<p>
-		Our deshed treatment can remove up to 90% unwanted hair.
-	</p>
-	<img src='images/logo_name.png'>
+	<div class="header-text">
+		<h1>
+            Waggerz Groom Room:<br>
+            Home to the amazing 7 step deshed
+        </h1>
+		<p>
+			Our deshed treatment can remove up to 90% unwanted hair.
+		</p>
+	</div>
+	<img src='images/logo_name.png' id="logo">
     <h2>All Natural Grooming</h2>
-    <a href="#matting-policy">Matting Policy</a>
+    <!--
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#matting-policy">Matting Policy</a>
+            </li>
+            <li>
+                <a href="./about-us.html">About Us</a>
+            </li>
+            <li>
+                <a href="./services.html">Services</a>
+            </li>
+            <li>
+                <a href="./contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    -->
     <div>
-        <h3>Services</strong>
-        <table border='1' width='100%'>
+        <h3>Services</h3>
+        <table class="services-table" cellspacing="0" cellpadding="10" border="1">
             <tr>
                 <thead>
-                    <th>Full Service Grooming</th>
-                    <th>Deshed Baths</th>
-                    <th>Trim Up</th>
+                    <th class="column-3">Full Service Grooming</th>
+                    <th class="column-3">Deshed Baths</th>
+                    <th class="column-3">Trim Up</th>
                 </thead>
             </tr>
             <tr>
-                <td>
+                <td class="product-description">
                     <p>Includes shampoo, conditioner, blow dry, brush out, nails, ear cleaning and all over haircut. (Deshed treatment is available and strongly encouraged for some grooms and in some cases may be required at an additional fee).</p>
                 </td>
-                <td>
+                <td class="product-description">
                     <p>Includes Ear Cleaning and nail trim with Deshed shampoo and conditioner blow out and 20 min. of brushing with Furminator/deshedding brush. <br>
                         Can eliminate up to 90% of unwanted shedding.<br><br>
                         Best results when done regularly for every 2-3 months.</p>
                 </td>
-                <td>
+                <td class="product-description">
                     <p>Includes Shampoo, conditioner, blow dry, brush out, nails, ear cleaning, trim face, sanitary and paw pads.</p>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <p>
-                        Pricing varies by size and coat type, ranging from $45-125<br>
+                    <p class="pricing">
+                        Pricing varies by size and coat type, ranging from $45-125<br><br>
                         <em><span>Call for specific breed pricing</span></em>
                     </p>
                 </td>
                 <td>
-                    <p>
-                        Price varies by breed from $45-100 based on size and coat type.<br>
+                    <p class="pricing">
+                        Price varies by breed from $45-100 based on size and coat type.<br><br>
                         <em>Call for specific pricing.</em>
                     </p>
                 </td>
                 <td>
-                    <p>
-                        Pricing varies by size and coat type from $35-55<br>
+                    <p class="pricing">
+                        Pricing varies by size and coat type from $35-55<br><br>
                         <em>Call for specific breed pricing.</em>
                     </p>
                 </td>
             </tr>
         </table>
     </div>
-    <script type="text/javascript">daysmart_acc = "29cdba84-5c48-4136-974d-7a68ba98a304"; daysmart_iframe_width = '100%'; daysmart_iframe_height = 0; daysmart_website_root = "https://plugin.myonlineappointment.com"; </script>
-    <script type="text/javascript" src="https://plugin.myonlineappointment.com/Scripts/external/bookingplugin.js"></script>
-    <h3>Who We Are</h3>
-    <p>
-        Waggerz was founded by a group of professional groomers who were tired of the big box ethos of “sell more, do less”.  With over 45 years of animal handling and training experience, we will always put your pet first.  We are dedicated to not only providing exceptional service to you and your pet, but also to our planet.  We use only all natural, eco friendly shampoos, conditioners, sprays and even our cleaning products are green!
-    </p>
-    <h3>
-        What We Do
-    </h3>
-    <p>
-        Every pet we see is treated as a member of our family.  From simple bath and nail trim to a full groom we believe every pet is special and deserves to be treated that way!  Even those with special behavioral or medical needs are welcome at Waggerz.  Our staff is highly trained to handle even the most delicate of babies!  Our staff is trained in Pet CPR and First Aid!
-    </p>
+    <div class="company-description">
+        <div class="column-2">
+            <h3>Who We Are</h3>
+            <p>
+                Waggerz was founded by a group of professional groomers who were tired of the big box ethos of “sell more, do less”.  With over 45 years of animal handling and training experience, we will always put your pet first.  We are dedicated to not only providing exceptional service to you and your pet, but also to our planet.  We use only all natural, eco friendly shampoos, conditioners, sprays and even our cleaning products are green!
+            </p>
+        </div>
+        <div class="column-2">
+            <h3>
+                What We Do
+            </h3>
+            <p>
+                Every pet we see is treated as a member of our family.  From simple bath and nail trim to a full groom we believe every pet is special and deserves to be treated that way!  Even those with special behavioral or medical needs are welcome at Waggerz.  Our staff is highly trained to handle even the most delicate of babies!  Our staff is trained in Pet CPR and First Aid!
+            </p>
+        </div>
+    </div>
     <a name="matting-policy" /><div>
         <h4>Matting Policy</h4>
         <ul>

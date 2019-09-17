@@ -16,3 +16,44 @@
 .styled-button:active {
     background-color: #0000ff;
 }
+
+.styled-button2 {
+    background-color: #0088ce;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #0088ce;
+}
+
+.button1:hover {
+    background-color: #0088ce;
+    color: white;
+}
+
+.styled-button3 {
+    background-color: #0088ce;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0;
+    cursor: pointer;
+    float: left;
+    border-right: 1px solid #006aa1;
+}
+
+.nav-button:hover {
+    background-color: #006aa1;
+}

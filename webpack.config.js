@@ -129,9 +129,11 @@ module.exports = {
         // Configuration options for MiniCssExtractPlugin. Here I'm only
         // indicating what the CSS outputted file name should be and
         // the location
-        new MiniCssExtractPlugin({
-            filename: 'styles/main.css'
-        }),
+        new CopyWebpackPlugin([{
+            from: './src/styles/*',
+            to: './styles',
+            flatten: true,
+        }]),
         new CopyWebpackPlugin([{
             from: './src/*.html',
             to: './',

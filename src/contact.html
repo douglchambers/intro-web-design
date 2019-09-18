@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Waggerz Groom Room</title>
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/dropdowns.css">
 </head>
 <body>
 <div class="header-text">
@@ -17,14 +18,13 @@
 </div>
 <img src='images/logo_name.png' id="logo">
 <h2>All Natural Grooming</h2>
-<!--
 <nav class="navbar">
     <ul>
         <li>
-            <a href="#matting-policy">Matting Policy</a>
+            <a href="/public/index.html#matting-policy">Matting Policy</a>
         </li>
         <li>
-            <a href="./about-us.html">About Us</a>
+            <a href="about-us.html">About Us</a>
         </li>
         <li>
             <a href="./services.html">Services</a>
@@ -32,9 +32,11 @@
         <li>
             <a href="./contact.html">Contact Us</a>
         </li>
+        <li>
+            <a href="./dropdowns.html">Dropdowns</a>
+        </li>
     </ul>
 </nav>
--->
 <form name="contact-form" action="mailto: dchambers@techtalentsouth.com">
     <div>
         <label>Name: <input type="text" name="name"></label>
@@ -51,5 +53,35 @@
     </div>
     <input type="submit" name="submit" value="submit">
 </form>
+<hr>
+<form name="contact-form" action="contact.html" method="GET">
+    <div>
+        <label>Name: <input type="text" name="name" placeholder="please enter your name" maxlength="5"></label>
+    </div>
+    <div>
+        <label>Phone: <input type="tel" name="input3" placeholder="telephone number"></label>
+    </div>
+    <div>
+        <label>Lucky Number <input type="number" value="13" max="21" min="2"></label>
+    </div>
+    <div>
+        <label>Email: <input type="date" name="email"></label>
+    </div>
+    <div>
+        Radios:
+            <label for="radioA">abcd:</label> <input id="radioA" type="radio" name="radio1" value="abcd"><br>
+            <label for="radioB">efgh:</label> <input id="radioB" type="radio" name="radio1" value="efgh">
+    </div>
+    <div>
+        Checkboxes:<br>
+        <label for="checkboxA">abcd:</label> <input id="checkboxA" type="checkbox" name="checkbox1" value="abcd"><br>
+            <label for="checkboxB">efgh:</label> <input id="checkboxB" type="checkbox" name="checkbox1" value="efgh">
+    </div>
+    Password: <input type="password" name="my-secret-password"><br>
+    <button type="reset">Reset</button>
+    <button type="submit">click me</button>
+</form>
 </body>
 </html>
+http://localhost:8080/public/contact.html?name=&input3=&email=&checkbox1=abcd&checkbox1=efgh
+checkbox1 == ['abcd', 'efgh']

@@ -5,6 +5,7 @@
     <title>Waggerz Groom Room</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/dropdowns.css">
+    <link rel="stylesheet" href="styles/forms.css">
 </head>
 <body>
 <div class="header-text">
@@ -57,34 +58,19 @@
     <input type="submit" name="submit" value="submit">
 </form>
 <hr>
-<form name="contact-form" action="contact.html" method="GET">
-    <div>
-        <label>Name: <input type="text" name="name" placeholder="please enter your name" maxlength="5"></label>
-    </div>
-    <div>
-        <label>Phone: <input type="tel" name="input3" placeholder="telephone number"></label>
-    </div>
-    <div>
-        <label>Lucky Number <input type="number" value="13" max="21" min="2"></label>
-    </div>
-    <div>
-        <label>Email: <input type="date" name="email"></label>
-    </div>
-    <div>
-        Radios:
-            <label for="radioA">abcd:</label> <input id="radioA" type="radio" name="radio1" value="abcd"><br>
-            <label for="radioB">efgh:</label> <input id="radioB" type="radio" name="radio1" value="efgh">
-    </div>
-    <div>
-        Checkboxes:<br>
-        <label for="checkboxA">abcd:</label> <input id="checkboxA" type="checkbox" name="checkbox1" value="abcd"><br>
-            <label for="checkboxB">efgh:</label> <input id="checkboxB" type="checkbox" name="checkbox1" value="efgh">
-    </div>
-    Password: <input type="password" name="my-secret-password"><br>
-    <button type="reset">Reset</button>
-    <button type="submit">click me</button>
-</form>
+<div class="form-style">
+    <h1>Sign Up Now!<span>Fill out this form.</span></h1>
+    <form>
+        <div class="section">First Name & Address</div>
+        <div class="inner-wrap">
+            <label>Your Full Name <input type="text" name="field1" /></label>
+            <label>Address <textarea name="field2"></textarea></label>
+            <label>Date: <input type="date"></label>
+        </div>
+        <div class="button-section">
+            <input type="submit" name="Sign Up" />
+        </div>
+    </form>
+</div>
 </body>
 </html>
-http://localhost:8080/public/contact.html?name=&input3=&email=&checkbox1=abcd&checkbox1=efgh
-checkbox1 == ['abcd', 'efgh']

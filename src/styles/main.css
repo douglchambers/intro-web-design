@@ -21,9 +21,7 @@ body {
 }
 
 .header-text {
-	position: absolute;
 	text-align: center;
-	right: 10px;
 	background-color: rgba(255, 255, 255, 0.75);
 	width: 50%;
 	padding: 10px;
@@ -66,3 +64,11 @@ body {
     /*background-color: #CCCCCC;*/
     /*padding: 30px;*/
 /*}*/
+.flex-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+}
